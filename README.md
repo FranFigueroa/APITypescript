@@ -1,4 +1,4 @@
 # APITypescript
 practiceTypescriptProject
 
-![API](/projectAPITypescript.jpg);
+![API](/projectAPITypescript.jpg)
