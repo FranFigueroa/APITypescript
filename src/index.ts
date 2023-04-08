@@ -4,6 +4,8 @@
 //App Configuration
 //Server Activation
 
+import router from '@/routers/routes';
+
 //Required External modules
 import * as dotenv from 'dotenv';
 import express from 'express';
@@ -26,11 +28,12 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('HelloWorldFrank!');
-});
+
 
 //Server Activation
 app.listen(port, () => {
   console.log('Listening on port ${port}');
 });
+
+//Routes
+app.use('/',router);
