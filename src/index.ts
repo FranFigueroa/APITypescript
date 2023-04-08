@@ -13,6 +13,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 
 import validateEnv from '@/utils/validateEnv'; //import validateEnv
+import usersRouter from './routers/users.routes';
 
 //App variables
 dotenv.config();
@@ -37,3 +38,4 @@ app.listen(port, () => {
 
 //Routes
 app.use('/',router);
+app.use('/',usersRouter);
